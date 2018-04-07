@@ -4,11 +4,11 @@
 
 >關於本次實驗 : 
 
->1.分群演算法(K-means) on GloVe
+>1.**分群演算法**(K-means) on GloVe
 
->2.降維視覺化(PCA) on 創意dataset
+>2.**降維視覺化**(PCA) on 創意dataset
 
->3.分類演算法(SVM) & Grid search (調參數) on 創意dataset 
+>3.**分類演算法**(SVM) & Grid search (調參數) on 創意dataset 
 
 # 1.分群演算法(K-means) on GloVe
 
@@ -40,12 +40,12 @@ jupyter :http://localhost:8888/notebooks/Desktop/K-means_cluster.ipynb
 | that   | 0.88387 | 0.3011 | ... |
 | ...    | ...   | ...     | ... | 
 
-    glove.6B 的內容是紀錄一萬個英文單字，維度分別有50、100、200、300。已知資料集有的特性(幾何相似、線性相關)，對這些向量進行K-means分群，可以預想到結果應該是這樣子的: 同群的單字間具表達某種'關係'。
+glove.6B 的內容是紀錄一萬個英文單字，維度分別有50、100、200、300。已知資料集有的特性(幾何相似、線性相關)，對這些向量進行K-means分群，可以預想到結果應該是這樣子的: 同群的單字間具表達某種'**關係**'。
 
 
 
 有些群有著明顯的共同點，舉例而言:'ski', 'skating', 'skiing', 'alpine', 'nordic' 滑雪、滑冰、高山、挪威分成一群；'evil', 'dragon', 'monster', 'spirits', 'alien', 'beings', 'creatures', 'gods', 'insects' 惡魔、龍、怪物、靈魂、外星人、生物、神、蟲為一群；'carbon', 'emissions', 'pollution', 'greenhouse', 'dioxide', 'gases', 'hydrogen' 碳、排放、汙染、溫室、二氧化碳、氣體、氫為一群。有些群並沒有辦法只出他們之間確切的關聯性，如:
-'1-0', '2-1', '2-0', '3-0', '3-1', '3-2', 'unbeaten', 'halftime' ，這一群其實是球類新聞，半場、不敗、比數等..單看數字是不容易聯想到對應到的是比數；我猜測是原生向量的產生會與句子中字詞出現的相關性有關，也就是說常常一起出現的詞會有著類似的向量，像是'amazon'與'internet', 'computer', 'web', 'networking', 'multimedia', 'websites' 分成一類。整體而言，每群資料間皆有著某種關聯性。
+'1-0', '2-1', '2-0', '3-0', '3-1', '3-2', 'unbeaten', 'halftime' ，這一群其實是球類新聞，半場、不敗、比數等..單看數字是不容易聯想到對應到的是比數；我猜測是原生向量的產生會與句子中字詞出現的相關性有關，也就是說常常一起出現的詞會有著類似的向量，像是'amazon'與'internet', 'computer', 'web', 'networking', 'multimedia', 'websites' 分成一類。整體而言，每群資料間皆有著**某種關聯性**。
 
 
 # 2.降維視覺化(PCA) on 創意dataset & 3. SVM
