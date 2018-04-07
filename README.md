@@ -24,7 +24,8 @@ jupyter :http://localhost:8888/notebooks/Desktop/K-means_cluster.ipynb
 | --- | ------------------------|-------------------------|-------------------------|
 | GloVe Geometry | <img src="http://nlp.stanford.edu/projects/glove/images/man_woman_small.jpg"></img>  | <img src="http://nlp.stanford.edu/projects/glove/images/city_zip_small.jpg"></img> | <img src="http://nlp.stanford.edu/projects/glove/images/comparative_superlative_small.jpg"></img> |
 
-若是找到單字'frog'，則'frog'附近的鄰居(幾何距離)也會是'類'青蛙的單字，此外也存在向量中的線性關係，郵政編碼的對應、邏輯關係man -> woman ≒ king -> queen ≒ uncle -> aunt，以及形容詞、比較級、最高級的向量關係。
+
+    若是找到單字'frog'，則'frog'附近的鄰居(幾何距離)也會是'類'青蛙的單字，此外也存在向量中的線性關係，郵政編碼的對應、邏輯關係man -> woman ≒ king -> queen ≒ uncle -> aunt，以及形容詞、比較級、最高級的向量關係。
 
 # GloVe
 
@@ -39,7 +40,7 @@ jupyter :http://localhost:8888/notebooks/Desktop/K-means_cluster.ipynb
 | that   | 0.88387 | 0.3011 | ... |
 | ...    | ...   | ...     | ... | 
 
->> glove.6B 的內容是紀錄一萬個英文單字，維度分別有50、100、200、300。已知資料集有的特性(幾何相似、線性相關)，對這些向量進行K-means分群，可以預想到結果應該是這樣子的: 同群的單字間具表達某種'關係'。
+    glove.6B 的內容是紀錄一萬個英文單字，維度分別有50、100、200、300。已知資料集有的特性(幾何相似、線性相關)，對這些向量進行K-means分群，可以預想到結果應該是這樣子的: 同群的單字間具表達某種'關係'。
 
 
 
