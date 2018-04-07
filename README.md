@@ -44,7 +44,7 @@ jupyter :http://localhost:8888/notebooks/Desktop/K-means_cluster.ipynb
 
 
 有些群有著明顯的共同點，舉例而言:'ski', 'skating', 'skiing', 'alpine', 'nordic' 滑雪、滑冰、高山、挪威分成一群；'evil', 'dragon', 'monster', 'spirits', 'alien', 'beings', 'creatures', 'gods', 'insects' 惡魔、龍、怪物、靈魂、外星人、生物、神、蟲為一群；'carbon', 'emissions', 'pollution', 'greenhouse', 'dioxide', 'gases', 'hydrogen' 碳、排放、汙染、溫室、二氧化碳、氣體、氫為一群。有些群並沒有辦法只出他們之間確切的關聯性，如:
-'1-0', '2-1', '2-0', '3-0', '3-1', '3-2', 'unbeaten', 'halftime' ，這一群其實是球類新聞，半場、不敗、比數等..單看數字是不容易聯想到對應到的是比數；我猜測是原生向量的產生會與句子中字詞出現的相關性有關，也就是說常常一起出現的詞會有著類似的向量，像是'amazon'與'internet', 'computer', 'web', 'networking', 'multimedia', 'websites' 分成一類。
+'1-0', '2-1', '2-0', '3-0', '3-1', '3-2', 'unbeaten', 'halftime' ，這一群其實是球類新聞，半場、不敗、比數等..單看數字是不容易聯想到對應到的是比數；我猜測是原生向量的產生會與句子中字詞出現的相關性有關，也就是說常常一起出現的詞會有著類似的向量，像是'amazon'與'internet', 'computer', 'web', 'networking', 'multimedia', 'websites' 分成一類。整體而言，每群資料間皆有著某種關聯性。
 
 
 # 2.降維視覺化(PCA) on 創意dataset & 3. SVM
@@ -57,7 +57,7 @@ PCA是最簡單的以特徵量分析多元統計分布的方法。其結果可�
 
 ![GITHUB](https://github.com/baker12355/cluster-word_in_vector-/blob/master/distribution.JPG)
 
-由圖可知這兩個資料不是分得很開，我猜測是因為資料集擁有不少相同的特徵如:大多同為形容詞、副詞(雨天,藍色等抽象含意並不會影響分數)。既然詞性相同則在語句中的相對位置也會相同，應當是主要的原因。分析完畢後便使用SVM分類，在此要注意到SVM中有許多參數是可以調整的，而透過網格搜索（Grid search）或交叉驗證（Cross validation），皆可以得到較佳參數，在這邊我使用Grid search。
+由圖可知這兩個資料不是分得很開，我猜測是因為資料集擁有不少相同的特徵如:大多同為形容詞、副詞(雨天,藍色等抽象含意並不會影響分數)。既然詞性相同則在語句中的相對位置也會相同，應當是主要的原因。分析完畢後便使用SVM分類，在此要注意到SVM中有許多參數是可以調整的，而透過網格搜索（Grid search）或交叉驗證（Cross validation），皆可以得到較佳參數，在這邊我使用Grid search。就結果而言這次的分類算是成功!
 
 
 
