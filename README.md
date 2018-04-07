@@ -1,7 +1,15 @@
 # cluster_word_in_vector
 
 
-本次實驗採用的資料集為: GloVe(Global Vectors for Word Representation)，裡頭的單字已轉換為向量形勢，轉換方式
+本次實驗採用的資料集為: GloVe(Global Vectors for Word Representation)，裡頭的單字已轉換為向量形式，其向量有以下特性:
+
+| nearest neighbors of <br/> <em>frog</em> | Litoria             |  Leptodactylidae | Rana | Eleutherodactylus |
+| --- | ------------------------------- | ------------------- | ---------------- | ------------------- |
+| Pictures | <img src="http://nlp.stanford.edu/projects/glove/images/litoria.jpg"></img> | <img src="http://nlp.stanford.edu/projects/glove/images/leptodactylidae.jpg"></img> | <img src="http://nlp.stanford.edu/projects/glove/images/rana.jpg"></img> | <img src="http://nlp.stanford.edu/projects/glove/images/eleutherodactylus.jpg"></img> |
+
+| Comparisons | man -> woman             |  city -> zip | comparative -> superlative |
+| --- | ------------------------|-------------------------|-------------------------|
+| GloVe Geometry | <img src="http://nlp.stanford.edu/projects/glove/images/man_woman_small.jpg"></img>  | <img src="http://nlp.stanford.edu/projects/glove/images/city_zip_small.jpg"></img> | <img src="http://nlp.stanford.edu/projects/glove/images/comparative_superlative_small.jpg"></img> |
 
 
 # GloVe
