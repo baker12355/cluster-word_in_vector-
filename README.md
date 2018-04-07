@@ -1,7 +1,7 @@
 # cluster_word_in_vector
 
 
-本次實驗採用的資料集為: GloVe(Global Vectors for Word Representation)，裡頭的單字已轉換為向量形式，其向量有以下特性:
+本次實驗採用的資料集為: GloVe，其中的單字已轉換為向量形式，其向量有以下特性:
 
 | nearest neighbors of <br/> <em>frog</em> | Litoria             |  Leptodactylidae | Rana | Eleutherodactylus |
 | --- | ------------------------------- | ------------------- | ---------------- | ------------------- |
@@ -11,6 +11,7 @@
 | --- | ------------------------|-------------------------|-------------------------|
 | GloVe Geometry | <img src="http://nlp.stanford.edu/projects/glove/images/man_woman_small.jpg"></img>  | <img src="http://nlp.stanford.edu/projects/glove/images/city_zip_small.jpg"></img> | <img src="http://nlp.stanford.edu/projects/glove/images/comparative_superlative_small.jpg"></img> |
 
+若是找到單字'frog'，則'frog'附近的鄰居(幾何距離)也會是'類'青蛙的單字，此外也存在向量中的線性關係，郵政編碼的對應、邏輯關係man -> woman ≒ king -> queen ≒ uncle -> aunt，以及形容詞、比較級、最高級的向量關係。
 
 # GloVe
 
