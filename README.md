@@ -8,7 +8,7 @@
 
 >2.降維視覺化(PCA) on 創意dataset
 
->3.分類演算法(SVM) on 創意dataset
+>3.分類演算法(SVM) & Grid search (調參數) on 創意dataset 
 
 # 1.分群演算法(K-means) on GloVe
 
