@@ -52,7 +52,7 @@ glove.6B 的內容是紀錄一萬個英文單字，維度分別有50、100、200
 
 # 2.降維視覺化(PCA) on 創意dataset & 3. SVM
 
-jupyter:https://github.com/baker12355/cluster-word_in_vector-/blob/master/PCA%20%26%20SVM.ipynb
+jupyter:https://nbviewer.jupyter.org/github/baker12355/cluster-word_in_vector-/blob/master/PCA%20%26%20SVM.ipynb
 
 創意Dataset是使用TextBlob對我的詞來進行情感分析，輸入字串將回傳 [-1,1] 區間的數值，越靠近-1代表情緒越差、越靠近1代表情緒越好、0表示沒有代表情緒，因此，我有10000個詞，會得到10000個分數，為了方便起見我用二分法區別，0代表情緒差、1代表情緒好。並使用SVM監督式學習進行分類，並在testing_Data上有86%的準確率。而在進行分類之前我先將資料降維觀察。
 
