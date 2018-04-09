@@ -1,1 +1,7 @@
-
+numpy
+textblob
+matplotlib
+sklearn
+scipy
+pandas
+keras
