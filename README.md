@@ -10,9 +10,11 @@
 
 >3.**分類演算法**(SVM) & Grid search (調參數) on 創意dataset 
 
+>4.**分類演算法**(DNN) better solution
+
 # 1.分群演算法(K-means) on GloVe
 
-jupyter :http://localhost:8888/notebooks/Desktop/K-means_cluster.ipynb
+ jupyter : https://nbviewer.jupyter.org/github/baker12355/cluster-word_in_vector-/blob/master/K-means_cluster.ipynb
 
 本次實驗採用的資料集為: GloVe，其中的單字已轉換為向量形式，其向量有以下特性:
 
@@ -59,6 +61,18 @@ PCA是最簡單的以特徵量分析多元統計分布的方法。其結果可�
 ![GITHUB](https://github.com/baker12355/cluster-word_in_vector-/blob/master/distribution.JPG)
 
 由圖可知這兩個資料不是分得很開，我猜測是因為資料集擁有不少相同的特徵如:大多同為形容詞、副詞(雨天,藍色等抽象含意並不會影響分數)。既然詞性相同則在語句中的相對位置也會相同，應當是主要的原因。分析完畢後便使用SVM分類，在此要注意到SVM中有許多參數是可以調整的，而透過網格搜索（Grid search）或交叉驗證（Cross validation），皆可以得到較佳參數，在這邊我使用Grid search。就結果而言這次的分類算是成功!
+
+# 4.DNN
+
+使用SVM的準確率大概落在80%~85%之間，因此我嘗試DNN，而DNN的效果也差不多85%，不曉得是資料特性極限或者是設計不良。
+
+
+
+
+
+
+
+
 
 
 
